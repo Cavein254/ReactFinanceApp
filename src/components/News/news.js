@@ -1,12 +1,24 @@
-import React, { Component } from "react";
-import Aside from "./subcomponents/aside";
+import React from "react";
+import "./news.css";
 
-export default class News extends Component {
-  render() {
+const News = ({ articles }) => {
+  console.log(articles);
+  const article = articles.map(article => {
     return (
       <>
-        <Aside />
+        <div className="article-container">
+          <div className="article-header">{article.title}</div>
+          <div className="article-body">{article.description}</div>
+          <div className="article-footer"></div>
+        </div>
       </>
     );
-  }
-}
+  });
+  return (
+    <>
+      <div>{article}</div>
+    </>
+  );
+};
+
+export default News;

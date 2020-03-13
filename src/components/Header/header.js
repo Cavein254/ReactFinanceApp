@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div>
       <header>
-        <div class="logo">
+        <div className="logo">
           <FontAwesomeIcon icon={faPodcast} size={"3x"} />
         </div>
         <div className="logotext">
