@@ -7,16 +7,21 @@ const News = ({ articles }) => {
     return (
       <>
         <div className="article-container">
-          <div className="article-header">{article.title}</div>
+          <div className="article-header">
+            <a href={article.url}>{article.title}</a>
+          </div>
           <div className="article-body">{article.description}</div>
-          <div className="article-footer"></div>
+          <div className="article-footer">
+            <div classname="source">{article.author}</div>
+            <div classname="datepublished">{article.publishedAt}</div>
+          </div>
         </div>
       </>
     );
   });
   return (
     <>
-      <div>{article}</div>
+      <div className="articles">{article}</div>
     </>
   );
 };

@@ -14,7 +14,7 @@ export default function Header() {
           <h1>Finance Live</h1>
         </div>
         <button className="analysis">
-          <a href={"./"}>Get Analysis</a>
+          <a href={"https://www.tradingview.com/"}>Get Analysis</a>
         </button>
       </header>
     </div>

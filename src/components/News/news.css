@@ -1,4 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Advent+Pro|Poiret+One&display=swap");
+
+.articles {
+  padding: 20px;
+  background-color: #fff;
+}
+
 .article-container {
-  padding: 0 0 0 10px;
-  background-color: lightgrey;
+  padding-bottom: 10px;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.article-header {
+  background-color: #58d68d;
+  color: white;
+  font-family: "Advent Pro", sans-serif;
+}
+.article-body {
+  font-family: "Poiret One", cursive;
+}
+.article-footer {
+  display: flex;
+  font-size: x-small;
+  float: right;
 }

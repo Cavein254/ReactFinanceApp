@@ -4,7 +4,6 @@ import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
 import News from "./components/News/news";
 import "./App.css";
-import { Item } from "semantic-ui-react";
 
 class App extends Component {
   state = {
@@ -41,8 +40,10 @@ class App extends Component {
     return (
       <>
         <Header />
-        <Aside />
-        <News articles={this.state.articles} />
+        <div className="shared-container">
+          <Aside />
+          <News articles={this.state.articles} />
+        </div>
         <Footer />
       </>
     );
