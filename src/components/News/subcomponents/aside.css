@@ -39,6 +39,10 @@ button:hover {
 form {
   padding-top: 5%;
 }
+.form-group{
+  display:flex;
+  flex-direction: column;
+}
 
 .quick-links {
   margin: auto 0;
